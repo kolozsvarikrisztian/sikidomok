@@ -1,0 +1,67 @@
+body{
+    margin: 0 auto;
+}
+
+form{
+    font-family: 'Geneva, Arial';
+    background-color: rgb(238,238,255);
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #8F8FCF;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px;
+}
+
+h1{
+    text-align: center;
+    margin: 0 auto;
+    box-shadow: 1px 1px 1px;
+    color: rgb(64, 0, 144);
+    border-radius: 10px;
+    width: 30%;
+    padding: 3px;
+}
+
+h2{
+    font-size: 120%;
+}
+
+p{
+    margin-left: 100px;
+    position: relative;
+}
+
+.adat{
+    /* margin-left: 50px; */
+    position: absolute;
+    left: 200px;
+}
+
+.adat input {
+    width: 100px;
+    text-align: right;
+}
+
+input[type="button"]{
+    display: block;
+    margin: 0 auto;
+}
+
+form:not(#teglalap){
+    display: none;
+}
+
+nav{
+    background-color: rgb(64, 0, 144);
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+.new-item{
+    display: inline-block;
+    padding: 20px;
+    cursor: pointer;
+    margin-left: 50px;
+}
+

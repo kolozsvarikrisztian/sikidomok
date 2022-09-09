@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Síkidomok</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <main>
+        <nav>
+            <span class="new-item" onclick="valt('teglalap')">Téglalap</span>
+            <span class="new-item" onclick="valt('kor')">Kör</span>
+            <span class="new-item" onclick="valt('haromszog')">Háromszög</span>
+            <span class="new-item" onclick="valt('negyzet')">Négyzet</span>
+            <span class="new-item" onclick="valt('hatszog')">Hatszög</span>
+        </nav>
+        <form id="teglalap">
+            <h1>A téglalap</h1>
+            <h2><b>Kiindulási adatok:</b></h2>
+            <p>
+                <label for="a"><b>'a'</b> oldal hossza:</label>
+                <span class="adat"><input type="number" id="a"> cm</span>
+            </p>
+            <p>
+                <label for="b"><b>'b'</b> oldal hossza:</label>
+                <span class="adat"><input type="number" id="b"> cm</span>
+            </p>
+            <input type="button" value="Számol" onclick="szamol()">
+
+            <hr>
+
+            <h2><b>Eredmények:</b></h2>
+            <p>
+                <label for="k_tegla">Kerület:</label>
+                <span class="adat"><input type="number" id="k_tegla" readonly> cm</span>
+            </p>
+            <p>
+                <label for="t_tegla">Terület:</label>
+                <span class="adat"><input type="number" id="t_tegla" readonly> cm<sup>2</sup></span>
+            </p>
+        </form>
+
+        <form id="kor">
+            <h1>A kör</h1>
+            <h2><b>Adatok:</b></h2>
+            <p>
+                <label for="r">A kör sugara:</label>
+                <span class="adat"><input type="number" id="r" onfocus="torol()" onblur="k_szamol('r')"> cm</span>
+            </p>
+            <p>
+                <label for="k_kor">A kör kerülete:</label>
+                <span class="adat"><input type="number" id="k_kor" onfocus="torol()" onblur="k_szamol('k')"> cm</span>
+            </p>
+            <p>
+                <label for="t_kor">A kör területe:</label>
+                <span class="adat"><input type="number" id="t_kor" onfocus="torol()" onblur="k_szamol('t')"> cm<sup>2</sup></span>
+            </p>
+            <input type="button" value="Számol" onclick="szamol()">
+        </form>
+
+        <form id="haromszog">
+            <h1>A háromszög</h1>
+            <h2><b>Kiindulási adatok:</b></h2>
+            <p>
+                <label for="a"><b>'a'</b> oldal hossza:</label>
+                <span class="adat"><input type="number" id="a"> cm</span>
+            </p>
+            <p>
+                <label for="b"><b>'b'</b> oldal hossza:</label>
+                <span class="adat"><input type="number" id="b"> cm</span>
+            </p>
+            <p>
+                <label for="c"><b>'c'</b> oldal hossza:</label>
+                <span class="adat"><input type="number" id="b"> cm</span>
+            </p>
+            <input type="button" value="Számol" onclick="szamol()">
+
+            <hr>
+
+            <h2><b>Eredmények:</b></h2>
+            <p>
+                <label for="k">Kerület:</label>
+                <span class="adat"><input type="number" id="k" readonly> cm</span>
+            </p>
+            <p>
+                <label for="t">Terület:</label>
+                <span class="adat"><input type="number" id="t" readonly> cm<sup>2</sup></span>
+            </p>
+        </form>
+    </main>
+</body>
+</html>
