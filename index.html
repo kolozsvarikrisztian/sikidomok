@@ -90,6 +90,50 @@
                 <span class="adat"><input type="number" id="t_haromszog" readonly> cm<sup>2</sup></span>
             </p>
         </form>
+
+        <form id="negyzet">
+            <h1>A négyzet</h1>
+            <h2><b>Kiindulási adatok:</b></h2>
+            <p>
+                <label for="n_a"><b>'a'</b> oldal hossza:</label>
+                <span class="adat"><input type="number" id="n_a"> cm</span>
+            </p>
+            <input type="button" value="Számol" onclick="negyzet_szamol()">
+
+            <hr>
+
+            <h2><b>Eredmények:</b></h2>
+            <p>
+                <label for="k_negyzet">Kerület:</label>
+                <span class="adat"><input type="number" id="k_negyzet" readonly> cm</span>
+            </p>
+            <p>
+                <label for="t_negyzet">Terület:</label>
+                <span class="adat"><input type="number" id="t_negyzet" readonly> cm<sup>2</sup></span>
+            </p>
+        </form>
+
+        <form id="hatszog">
+            <h1>A hatszög</h1>
+            <h2><b>Kiindulási adatok:</b></h2>
+            <p>
+                <label for="hatszog_a"><b>'a'</b> oldal hossza:</label>
+                <span class="adat"><input type="number" id="hatszog_a"> cm</span>
+            </p>
+            <input type="button" value="Számol" onclick="hatszog_szamol()">
+
+            <hr>
+
+            <h2><b>Eredmények:</b></h2>
+            <p>
+                <label for="k_hatszog">Kerület:</label>
+                <span class="adat"><input type="number" id="k_hatszog" readonly> cm</span>
+            </p>
+            <p>
+                <label for="t_hatszog">Terület:</label>
+                <span class="adat"><input type="number" id="t_hatszog" readonly> cm<sup>2</sup></span>
+            </p>
+        </form>
     </main>
 </body>
 </html>

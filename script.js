@@ -36,6 +36,18 @@ function haromszog_szamol() {
     document.getElementById('t_haromszog').value = t;
 }
 
+function negyzet_szamol() {
+    let a = parseInt(document.getElementById('n_a').value);
+    document.getElementById('k_negyzet').value = 4 * a;
+    document.getElementById('t_negyzet').value = a * a;
+}
+
+function hatszog_szamol() {
+    let a = parseInt(document.getElementById('hatszog_a').value);
+    document.getElementById('k_hatszog').value = 6 * a;
+    document.getElementById('t_hatszog').value = (3 / 2) * (a * a) * Math.cbrt(3);
+}
+
 function valt(mire) {
     // document.getElementById('teglalap').style.display = "none";
     // document.getElementById('kor').style.display = "none";
@@ -53,7 +65,13 @@ function valt(mire) {
             break;
         case 'haromszog':
             document.getElementById('haromszog').style.display = "block";
-            break;   
+            break; 
+        case 'negyzet':
+            document.getElementById('negyzet').style.display = "block";
+            break;
+        case 'hatszog':
+            document.getElementById('hatszog').style.display = "block";
+            break;
     }
 }
 
