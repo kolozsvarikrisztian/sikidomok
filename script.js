@@ -45,7 +45,7 @@ function negyzet_szamol() {
 function hatszog_szamol() {
     let a = parseInt(document.getElementById('hatszog_a').value);
     document.getElementById('k_hatszog').value = 6 * a;
-    document.getElementById('t_hatszog').value = (3 / 2) * (a * a) * Math.cbrt(3);
+    document.getElementById('t_hatszog').value = (3 / 2) * (a * a) * Math.pow(3, 1/2);
 }
 
 function valt(mire) {
@@ -56,23 +56,24 @@ function valt(mire) {
     for (i=0; i < formok.length; i++) {
         formok[i].style.display = "none";
     }
-    switch (mire) {
-        case 'kor':
-            document.getElementById('kor').style.display = "block";
-            break;
-        case 'teglalap':
-            document.getElementById('teglalap').style.display = "block";
-            break;
-        case 'haromszog':
-            document.getElementById('haromszog').style.display = "block";
-            break; 
-        case 'negyzet':
-            document.getElementById('negyzet').style.display = "block";
-            break;
-        case 'hatszog':
-            document.getElementById('hatszog').style.display = "block";
-            break;
-    }
+    document.getElementById(mire).style.display = "block";
+    // switch (mire) {
+        // case 'kor':
+        //     document.getElementById('kor').style.display = "block";
+        //     break;
+        // case 'teglalap':
+        //     document.getElementById('teglalap').style.display = "block";
+        //     break;
+        // case 'haromszog':
+        //     document.getElementById('haromszog').style.display = "block";
+        //     break; 
+        // case 'negyzet':
+        //     document.getElementById('negyzet').style.display = "block";
+        //     break;
+        // case 'hatszog':
+        //     document.getElementById('hatszog').style.display = "block";
+        //     break;
+    // }
 }
 
 function torol() {
